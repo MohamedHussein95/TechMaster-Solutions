@@ -1,0 +1,67 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-text);
+  width: 20vw;
+  padding: 2rem;
+  border-radius: 10px;
+  height: 40vh;
+  max-height: 50vh;
+  opacity: 0;
+  transition: all 1s ease;
+  animation: scale-in-center 1s ease forwards;
+  animation-delay: calc(0.2s * var(--x));
+}
+.card__image {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.card__body p {
+  font-family: var(--font-family);
+  color: #fff;
+  opacity: 0.8;
+  text-align: left;
+  font-size: 18px;
+}
+.card__body p::before {
+  content: "❝";
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 28px;
+}
+.card__body p::after {
+  content: " ❞";
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 28px;
+}
+.card__footer h3 {
+  font-family: var(--font-family);
+  color: #fff;
+  font-weight: bolder;
+  font-size: 28px;
+  text-align: center;
+}
+.card__footer p {
+  font-family: var(--font-family);
+  color: #fff;
+  opacity: 0.7;
+  font-weight: 500;
+  font-size: 13px;
+  text-align: center;
+}
+.card__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

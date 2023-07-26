@@ -1,0 +1,29 @@
+.email {
+  display: flex;
+  width: 40vw;
+}
+.email input {
+  padding: 2rem;
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+  color: #000;
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  height: 100%;
+  flex: 1;
+}
+.email button {
+  padding: 2rem;
+  border: none;
+  height: 100%;
+  background-color: var(--color-text);
+  color: #fff;
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-weight: bolder;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+}

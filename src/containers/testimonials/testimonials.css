@@ -1,0 +1,38 @@
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  transition: all 1s ease;
+}
+.testimonials.animate {
+  opacity: 1;
+  animation: slide-in-bottom 1s ease forwards;
+}
+.testimonials__header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.testimonials__header-container h1 {
+  font-family: var(--font-family);
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+}
+.testimonials__header-container p {
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  opacity: 0.5;
+}
+.testimonials__card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  width: 100%;
+  margin-top: 2rem;
+}

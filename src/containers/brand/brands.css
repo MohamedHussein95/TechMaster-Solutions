@@ -1,0 +1,36 @@
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 2rem;
+  padding: 4rem;
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.brand.animate {
+  opacity: 1;
+  -webkit-animation: slide-in-top, slide-in-left 1s ease forwards;
+  animation: slide-in-top, slide-in-left 1s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
+}
+.brand__img-container {
+}
+@media screen and (max-width: 840px) {
+}
+@media screen and (max-width: 550px) {
+  .brand {
+    padding: 2rem;
+    gap: 1rem;
+  }
+  .brand__img-container {
+    width: 100vw;
+    height: 5vw;
+  }
+
+  .brand__img-container img {
+    width: 100%;
+    height: 100%;
+  }
+}
