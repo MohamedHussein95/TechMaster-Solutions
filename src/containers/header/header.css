@@ -1,8 +1,15 @@
 .header {
   padding: 2rem;
   transition: all 1s ease;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px); /* Add blur effect */
+  background-color: transparent; /* Set a translucent background color */
 }
-
+.header.sticky {
+  padding: 1rem; /* Reduced padding when header is sticky */
+}
 @media screen and (max-width: 780px) {
   .header {
     padding: 2rem 0;
